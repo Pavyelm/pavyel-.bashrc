@@ -58,7 +58,7 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-PS1='\[\e[0;2;38;5;215m\]\u\[\e[0;38;5;64m\]@\[\e[0;38;5;75m\]\w\[\e[0;7;38;5;99;107m\]$(git branch 2>/dev/null | grep '"'"'^*'"'"' | colrm 1 2)\[\e[0m\]\$\[\e[0m\]'
+PS1='\[\e[0;2;38;5;215m\]\u\[\e[0;38;5;64m\]@\[\e[0m\]:\[\e[0;38;5;75m\]\w\[\e[0;7;38;5;99;107m\]$(git branch 2>/dev/null | grep '"'"'^*'"'"' | colrm 1 2)\[\e[0m\]\$ \[\e[0m\]'
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
