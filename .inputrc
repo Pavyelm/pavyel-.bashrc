@@ -1,0 +1,16 @@
+# Prettyfi 
+set colored-stats On
+set colored-completion-prefix On
+
+# Cd settings, 
+set show-all-if-ambiguous on
+set completion-ignore-case on
+set completion-query-items 1000
+
+# Command history search
+"\e[A": history-search-backward
+"\e[B": history-search-forward
+
+# Move foreward/backward by word
+"\e[1;5D": backward-word
+"\e[1;5C": forward-word

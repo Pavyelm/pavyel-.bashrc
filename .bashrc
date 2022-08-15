@@ -1,7 +1,3 @@
-# ~/.bashrc: executed by bash(1) for non-login shells.
-# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
-# for examples
-
 # If not running interactively, don't do anything
 
 case $- in
@@ -12,6 +8,23 @@ esac
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 HISTCONTROL=ignoreboth
+
+#Alias
+
+#git
+#alias status="git status"
+#alias push="git push origin"
+#alias pull="git pull origin"
+#alias commit="git commit -m"
+#alias add="git add ."
+#alias gitname="git config --global user.name 'Jacob Pedersen'"
+#alias gitmail="git config --global user.email 'jdpedersen1@yahoo.com'"
+#alias ginit="git init"
+#alias remote="git remote add origin"
+#alias config="/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME"
+
+#Navigate files
+alias ..="cd .."
 
 # append to the history file, don't overwrite it
 shopt -s histappend
